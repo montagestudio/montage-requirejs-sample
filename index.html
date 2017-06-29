@@ -9,15 +9,19 @@
 
     <script type="text/javascript" data-main="main.js" src="node_modules/requirejs/require.js"></script>
   	<script type="text/javascript" src="require-cfg.js"></script>
+    
+</head>
+<body>
     <script type="text/montage-serialization">
     {
         "owner": {
-            "prototype": "montage/ui/loader.reel"
+            "prototype": "ui/main.reel",
+            "properties": {
+                "element": {"#": "main"}
+            }
         }
     }
     </script>
-</head>
-<body>
-    <span class="loading"></span>
+    <div data-montage-id="main"></div>
 </body>
 </html>
